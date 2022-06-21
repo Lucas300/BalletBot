@@ -8,7 +8,7 @@
 }
 body{
     font-size: 100%; 
-    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    background-image: linear-gradient(135deg,#3f3fda 0%, #7c2a17 100%);
 }
 
 .cabecalho{
@@ -37,10 +37,13 @@ body{
     
 }
 .conteudo-principal{
+    
     display:flex;
     flex-direction:row;
     align-items:center;
     justify-content: space-around;
+    
+   
 }
 .conteudo-principal-escrito{
     display: flex;
@@ -72,11 +75,13 @@ body{
     text-align: center;
     color:#2F2325;
 }
-.conteudo-principal-escrito-botao:hover{
-    background-color: rgba(236, 214, 196, 0.53);
-}
+
 .conteudo-principal-imagem{
+    transition: all 0.5s;
+    cursor: pointer;
     height:430px;
+    
+    
 }
 .conteudo-secundario{
     display: flex;
@@ -110,3 +115,49 @@ body{
     display:block; /*vai usar todo o bloco do elemento*/
     margin: 0 auto; /*vai centralizar, mas se for um unico elemento*/
 }
+
+/*efeitos hover(usados para fazer efeito assim que passar o mouse por cima)*/
+.cabecalho-imagem:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+
+}
+.conteudo-principal-escrito-botao:hover{
+    background-color: rgba(235, 158, 95, 0.53);
+    border-radius: 40px;
+}
+#a:hover{
+    margin-bottom: 1px;
+    border-bottom : 0.4px solid #FFF2E7;
+}
+#b:hover{
+    margin-bottom: 1px;
+    border-bottom : 0.4px solid #FFF2E7;
+}
+#c:hover{
+    margin-bottom: 1px;
+    border-bottom : 0.4px solid #FFF2E7;
+}
+#d:hover{
+    margin-bottom: 1px;
+    border-bottom : 0.4px solid #FFF2E7;
+}
+.conteudo-principal-escrito-titulo:hover{
+    font-size:70px;
+}
+.rodape:hover{
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(1.3);
+
+}
+.conteudo-principal-imagem:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+
+
+
+
