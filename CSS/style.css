@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+*{
+    margin: 0; /*distancia pra fora do nosso elemento*/
+    padding: 0;/*Distancia interna do conteudo com suas bordas internas*/
+    box-sizing:border-box ;
+    text-decoration: none;/*aqui tiramos toda decoração que ja pode vim no texto*/
+}
+body{
+    font-size: 100%; 
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+.cabecalho-imagem{
+    height: 72px; /*altura da imagem*/
+}
+.cabecalho-menu{
+    display: flex;
+    gap: 32px;/*Gera um espaço entre os elemntos dentro da classe*/
+}
+.cabecalho-menu-item{
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
+    font-weight: 400;/*quanto mais pesada mais negrito fica*/
+    font-size: 18px; /*tamanho da fonte*/
+}
+.conteudo {
+    margin-bottom: 48px;
+    border-top : 0.4px solid #FFF2E7;
+    
+}
+.conteudo-principal{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: space-around;
+}
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;/*Gera um espaço entre os elemntos dentro da classe*/
+}
+.conteudo-principal-escrito-titulo{
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color:#FFF2E7;
+}
+.conteudo-principal-escrito-subtitulo{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color:#ECD6C4;
+}
+.conteudo-principal-escrito-botao{
+    background-color: #ECD6C4;
+    width: 180px; /*largura*/
+    height:60px; /*altura*/
+    border:none; /*sem borda*/
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);/*sombra da borda*/
+    border-radius: 20px;/*arredondando a borda*/
+    font-size:24px;
+    font-weight: 400;
+    font-family: 'Sarala', sans-serif;
+    text-align: center;
+    color:#2F2325;
+}
+.conteudo-principal-escrito-botao:hover{
+    background-color: rgba(236, 214, 196, 0.53);
+}
+.conteudo-principal-imagem{
+    height:430px;
+}
+.conteudo-secundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px; /*Gera um espaço entre os elemntos dentro da classe*/
+    margin-top:48px;/*da um espaçamento na margem do top*/
+}
+.conteudo-secundario-titulo{
+    border-top: 0.4px solid #FFF2E7;
+    padding-top:48px;
+    font-weight:400;
+    font-size:24px;
+    font-family: 'Righteous', cursive;
+    color:#FFF2E7;
+    margin-bottom: 16px; /*vai espaçar para baixo, distanciando dos subtitulos*/
+}
+.conteudo-secundario-paragrafo{
+    font-size:18px;
+    font-weight: 300;
+    font-family: 'Sarala', sans-serif;
+    color:#ECD6C4;
+}
+.rodape{
+    padding: 32px;
+    border-top:0.4px solid #FFF2E7;
+}
+.rodape-imagem{
+    height: 48px;/*altura da imagem*/
+    /*display:block e margin:0 auto     foram usados para centralizar a imagem*/
+    display:block; /*vai usar todo o bloco do elemento*/
+    margin: 0 auto; /*vai centralizar, mas se for um unico elemento*/
+}
